@@ -2,9 +2,7 @@ def bubble_sort(array)
   loop do
     change_count = 0
     array.each_with_index do |num, pos|
-      if pos == array.length - 1
-        break
-      end
+      break if pos == array.length - 1
       if (num <=> array[pos + 1]) > 0
         temp_cont = num
         array[pos] = array[pos + 1]
