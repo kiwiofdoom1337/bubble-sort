@@ -2,7 +2,7 @@ def bubble_sort(array)
   loop do
     change_count = 0
     array.each_with_index do |num, pos|
-      if array[pos + 1] == nil
+      if pos == array.length - 1
         break
       end
       if (num <=> array[pos + 1]) > 0
