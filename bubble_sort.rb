@@ -13,7 +13,7 @@ def bubble_sort(array)
       end
     end
     break if change_count == 0
-  end  
+  end
   p array
 end
 
